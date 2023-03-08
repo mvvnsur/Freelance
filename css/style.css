@@ -73,6 +73,7 @@ header{
   text-align: center;
   border-radius: 5px;
   font-size: 16px;
+  margin: 5px 5px;
 }
 
 .badge_2 {
@@ -160,17 +161,12 @@ header{
 }
 
 .card{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: space-between;
-  text-align: center;
   width: 280px;
-  height: 420px;
+  min-height: 420px;
   background: #f2f5f7;
   padding: 15px;
-  margin: 0px 20px;
+  margin: auto;
+  text-align: center;
 }
 .card__title p{
   font-size: 12px;
@@ -181,7 +177,6 @@ header{
 }
 
 .card__icons{
-  width: 200px;
   display: flex;
   justify-content: space-evenly;
   padding: 10px;
@@ -212,13 +207,37 @@ header{
   margin-bottom: 5px;
 }
 
-.card__price{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 30px;
+.price__one{
+  margin-top: 20px;
 }
 
+.price__three{
+  margin-top: 66px;
+}
+
+.price__four{
+  margin-top: 15px;
+}
+
+.btn-primary{
+  border: none;
+  background-color: rgb(15, 90, 219);
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-primary a{
+  color: white;
+}
+
+.price__two{
+  margin-top: 25px;
+}
 .price__btn{
   background-color: #fff0dc;
   color: #ffac41;
@@ -399,10 +418,6 @@ footer li{
     justify-content: center;
     z-index: 10;
   }
-
-  .nav__bar{
-    padding-left: 80px;
-  }
   
   .main__section__two{
     text-align: center;
@@ -416,14 +431,13 @@ footer li{
   }
 
   .section__one__location{
-    background: none;
+    display: flex;
+    flex-direction: column;
+    height: auto;
   }
 
-  .section__one__location h2{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 4px;
+  .btn-primary{
+    margin-top: 15px;
   }
 
   .section__one__content{
@@ -495,16 +509,15 @@ footer li{
     margin-right: 20px;
   }
 
-  
-
   .nav__bar {
     top: 0;
     left: 0;
     width: 100%;
     height: 80px;
-    background: #de2a1d!important;
+    background: #b1271d!important;
     transform: translateX(100%);
     transition: transform 0.5s; 
+    padding-left: 10px;
   }
   .nav__bar.active {
     height: 100%;
@@ -512,9 +525,10 @@ footer li{
     color: white;
     display: flex;
     flex-direction: column;
+    justify-content: start;
     align-items: center;
     font-size: 25px;
-    padding: 0;
+    padding-top: 90px;
   }
 
   .nav__bar.active a{
@@ -522,6 +536,7 @@ footer li{
   }
   .nav__bar li {
     list-style-type: none;
+    margin-bottom: 20px;
   }
   
   .menu__btn.active span:nth-of-type(1) {
