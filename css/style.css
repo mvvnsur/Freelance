@@ -449,12 +449,8 @@ footer li{
 
   .section__two__cards{
     justify-content: start;
-<<<<<<< HEAD
     padding-left: 15px;
-    gap: 10px;
-=======
     gap: 10px;    
->>>>>>> dc739916dd6dabec69aa27d87e142e9223e8aed2
   }
   .section__one__title{
     font-size: 30px!important;
