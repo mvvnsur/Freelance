@@ -67,6 +67,7 @@ header{
 }
 
 .badge {
+  font-family: 'Gilroy', sans-serif;
   background-color: green;
   color: white;
   padding: 4px 8px;
@@ -77,6 +78,7 @@ header{
 }
 
 .badge_2 {
+  font-family: 'Gilroy', sans-serif;
   background-color: green;
   color: white;
   padding: 4px 8px;
@@ -87,6 +89,7 @@ header{
 }
 
 .badge_3{
+  font-family: 'Gilroy', sans-serif;
   background-color: rgb(15, 90, 219);
   color: white;
   padding: 4px 8px;
@@ -410,21 +413,17 @@ footer li{
     display: none;
   }
 
-  header{
-    position: fixed;
-    background: white;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    z-index: 10;
+  .main__section__one{
+    height: 530px;
   }
   
   .main__section__two{
     text-align: center;
+    margin: 0;
   }
 
   .section__one__article{
-    padding-top: 30px;
+    margin-top: 10px;
     width: 100%;
     height: 370px;
     text-align: center;
@@ -452,6 +451,7 @@ footer li{
   .section__two__cards{
     justify-content: start;
     padding-left: 15px;
+    gap: 10px;
   }
   .section__one__title{
     font-size: 30px!important;
@@ -505,20 +505,31 @@ footer li{
   }
 
   .nav{
-    width: 40px;
     margin-right: 20px;
+    z-index: 2;
   }
 
   .nav__bar {
     top: 0;
     left: 0;
-    width: 100%;
-    height: 80px;
+    width: 100%!important;
+    height: 100%!important;
     background: #b1271d!important;
     transform: translateX(100%);
     transition: transform 0.5s; 
-    padding-left: 10px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    font-size: 25px;
+    padding-top: 90px;
   }
+
+  .nav__bar li a{
+    color: white;
+  }
+
   .nav__bar.active {
     height: 100%;
     transform: translateX(0);
